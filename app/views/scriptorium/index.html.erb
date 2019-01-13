@@ -1,0 +1,17 @@
+<div class="entrance">
+  
+  <div class="entrance__top">
+    <div class="entrance__top__headers">
+      <h1 class="entrance__top__header">The Scriptorium</h1>
+      <h2 class="entrance__top__subheader">Entries</h2>
+    </div>
+    <%= image_tag "monk.gif", class: "entrance__top__monk" %>
+  </div>
+  <div class="entrance__bottom">
+    <ul class="entrance__article-list">
+      <% @articles.each do |article| %>
+        <li class="entrance__article-header"><%= link_to article.title, article_path(article) %></li>
+    <% end %>
+    </ul>
+  </div>
+</div>

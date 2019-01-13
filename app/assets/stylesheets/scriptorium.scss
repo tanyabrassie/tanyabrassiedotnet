@@ -1,0 +1,56 @@
+// Place all the styles related to the Scriptorium controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  margin: 0;
+  color: #363636;
+  font-family: monospace;
+}
+
+.entrance {
+  &__header {
+    text-align: center;
+  }
+}
+
+.entrance__top {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-between;
+  background-color: #fff;
+  position: relative;
+
+  &__headers {
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__subheader {
+    position: absolute;
+    bottom: -10px;
+  }
+
+  &__monk {
+    height: 100%;
+    transform: rotate(-5deg);
+  }
+}
+
+.entrance__bottom {
+  background-color: #aff7ff;
+  padding: 20px;
+}
+
+.entrance__article-list {
+  padding: 0;
+}
+
+.entrance__article-header {
+  list-style-type: none;
+}
