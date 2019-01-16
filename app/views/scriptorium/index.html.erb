@@ -1,17 +1,48 @@
 <div class="entrance">
-  
+
   <div class="entrance__top">
-    <div class="entrance__top__headers">
-      <h1 class="entrance__top__header">The Scriptorium</h1>
-      <h2 class="entrance__top__subheader">Entries</h2>
+    <div class="entrance__question">?</div>
+    <div class="entrance__star">&#x22C5;</div>
+    <div class="entrance__tab">
+      <h2 class="entrance__entries">Entries</h2>
+      <div class="entrance__dots">...</div>
+      <span class="entrance__left-line"/>
     </div>
-    <%= image_tag "monk.gif", class: "entrance__top__monk" %>
+    <div class="entrance__top__left">
+      <h1 class="entrance__top__header">The Scriptorium</h1>
+    </div>
+    <div class="entrance__top__right">
+      <div class="entrance__tilted">
+        <div class="dot-cluster--top">
+          <span class="dot-cluster--top__dot"/>
+          <span class="dot-cluster--top__dot"/>
+          <span class="dot-cluster--top__dot"/>
+        </div>
+        <div class="dot-cluster--bottom">
+          <span class="dot-cluster--bottom__dot"/>
+          <span class="dot-cluster--bottom__dot"/>
+          <span class="dot-cluster--bottom__dot"/>
+        </div>
+        <div class="dot-cluster--left">
+          <span class="dot-cluster--left__dot"/>
+          <span class="dot-cluster--left__dot"/>
+          <span class="dot-cluster--left__dot"/>
+        </div>
+        <%= image_tag "monk.gif", class: "entrance__top__monk" %>
+      </div>
+      <span class="entrance__right-line"/>
+      <div class="entrance__star">&#x22C5;</div>
+
+    </div>
   </div>
   <div class="entrance__bottom">
     <ul class="entrance__article-list">
       <% @articles.each do |article| %>
-        <li class="entrance__article-header"><%= link_to article.title, article_path(article) %></li>
-    <% end %>
+        <li class="entrance__bottom__article"><%= link_to article.title, article_path(article) %></li>
+        <li class="entrance__bottom__article"><%= link_to article.title, article_path(article) %></li>
+        <li class="entrance__bottom__article"><%= link_to article.title, article_path(article) %></li>
+        <li class="entrance__bottom__article"><%= link_to article.title, article_path(article) %></li>
+      <% end %>
     </ul>
   </div>
 </div>
