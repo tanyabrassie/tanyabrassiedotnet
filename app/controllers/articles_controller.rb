@@ -4,7 +4,6 @@ class ArticlesController < ApplicationController
   end
 
   def new
-    render 'welcome/index'
   end
 
   def create

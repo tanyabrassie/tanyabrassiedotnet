@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'scriptorium/index'
+  get 'scriptorium', to: 'scriptorium#index'
   get 'welcome/index'
 
   resources :articles
