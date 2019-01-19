@@ -1,48 +1,41 @@
-<div class="entrance">
-
-  <div class="entrance__top">
-    <div class="entrance__question">?</div>
-    <div class="entrance__star">&#x22C5;</div>
-    <div class="entrance__tab">
-      <h2 class="entrance__entries">Entries</h2>
-      <div class="entrance__dots">...</div>
-      <span class="entrance__left-line"/>
+<div class="header">
+  <div class="not-equal">
+    <span class="exclamation">!</span>
+    <span class="equals">=</span>
+    <span class="equals-two">=</span>
+  </div>
+  <div class="russian">Б</div>
+  <div class="closing">&#60;/&#62;</div>
+  <div class="brackets">{}</div>
+  <div class="header-content">
+    <div class="header-content__text">
+      <h1 class="header-content__title">The Scriptorium</h1>
+      <em class="header-content__subtitle">A learning center</em>
     </div>
-    <div class="entrance__top__left">
-      <h1 class="entrance__top__header">The Scriptorium</h1>
-    </div>
-    <div class="entrance__top__right">
-      <div class="entrance__tilted">
-        <div class="dot-cluster--top">
-          <span class="dot-cluster--top__dot"/>
-          <span class="dot-cluster--top__dot"/>
-          <span class="dot-cluster--top__dot"/>
-        </div>
-        <div class="dot-cluster--bottom">
-          <span class="dot-cluster--bottom__dot"/>
-          <span class="dot-cluster--bottom__dot"/>
-          <span class="dot-cluster--bottom__dot"/>
-        </div>
-        <div class="dot-cluster--left">
-          <span class="dot-cluster--left__dot"/>
-          <span class="dot-cluster--left__dot"/>
-          <span class="dot-cluster--left__dot"/>
-        </div>
-        <%= image_tag "monk.gif", class: "entrance__top__monk" %>
-      </div>
-      <span class="entrance__right-line"/>
-      <div class="entrance__star">&#x22C5;</div>
-
+    <div class="header-content__image">
+      <%= image_tag "gradient-monk.png", class: "header-content__image__monk" %>
     </div>
   </div>
-  <div class="entrance__bottom">
-    <ul class="entrance__article-list">
-      <% @articles.each do |article| %>
-        <li class="entrance__bottom__article"><%= link_to article.title, article_path(article) %></li>
-        <li class="entrance__bottom__article"><%= link_to article.title, article_path(article) %></li>
-        <li class="entrance__bottom__article"><%= link_to article.title, article_path(article) %></li>
-        <li class="entrance__bottom__article"><%= link_to article.title, article_path(article) %></li>
-      <% end %>
+  <div class="dots">...</div>
+  <div class="ands floating">&&</div>
+</div>
+
+<div class="content">
+  <div class="content__container">
+    <h2 class="content__title">Entries</h2>
+    <ul class="content__list">
+      <li class="content__article">
+        <h3 class="content__article__title">Presenting the Scriptorium, a learning center!</h2>
+      </li>
+      <li class="content__article">
+        <h3 class="content__article__title">CSS Animations and cool things!</h2>
+      </li>
+      <li class="content__article">
+        <h3 class="content__article__title">Recycling spot -- the summer's hottest application!</h2>
+      </li>
+      <li class="content__article">
+        <h2 class="content__article__title">1 year of computing!</h2>
+      </li>
     </ul>
   </div>
 </div>
