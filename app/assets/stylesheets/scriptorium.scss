@@ -228,6 +228,13 @@ body {
     font-family: europa, sans-serif;
     font-weight: 700;
     font-size: 18px;
+    text-decoration: none;
+    color: $greyBrown;
+
+    &:hover {
+      opacity: .7;
+      transition: opacity .5s;
+    }
   }
 }
 
