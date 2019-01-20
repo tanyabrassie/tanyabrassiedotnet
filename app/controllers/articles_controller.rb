@@ -1,4 +1,7 @@
 class ArticlesController < ApplicationController
+
+  http_basic_authenticate_with name: "dustinDunes", password: ENV["BLOG_SECRET_KEY"], except: [:index, :show]
+  
   def show
     @article = Article.find(params[:id])
   end
