@@ -35,8 +35,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 30px;
+  align-items: flex-start;
+  padding: 10px;
 
 
   @media screen and (min-width: 648px) {
@@ -86,11 +86,13 @@ body {
   position: absolute;
   top: 20px;
   left: 10%;
+  display: none;
   color: $coral;
 
   @media screen and (min-width: 648px) {
     top: 20px;
     left: 10%;
+    display: block;
   }
 }
 
@@ -162,16 +164,20 @@ body {
   color: $coral;
   position: absolute;
   bottom: 80px;
-  right: 80px;
+  right: 35px;
   animation: colorMorph;
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
+
+  @media screen and (min-width: 640px) {
+    right: 80px;
+  }
 }
 
 .closing {
   font-size: 22px;
-  top: 160px;
+  top: 170px;
   left: 10%;
   font-weight: 700;
   position: absolute;
@@ -182,7 +188,7 @@ body {
   animation-fill-mode: forwards;
   
   @media screen and (min-width: 648px) {
-    top: 60px;
+    top: 50px;
     left: 35%;
   }
 }
@@ -225,36 +231,12 @@ body {
   }
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-
-  }
-}
-
-@keyframes disappear {
-  from {
-    visibility: hidden;
-  }
-
-  to {
-    visibility: visible;
-  }
-}
-
-
-
-
 .floating{
 	animation-name: floating;
 	-webkit-animation-name: floating;
 
-	animation-duration: 2s;	
-	-webkit-animation-duration: 2s;
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
 
 	animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
@@ -265,9 +247,9 @@ body {
 		transform: translateY(0%);	
 	}
 	50% {
-		transform: translateY(7%);	
+		transform: translateY(15%);	
 	}	
-	100% {
+	150% {
 		transform: translateY(0%);
 	}			
 }
@@ -277,7 +259,7 @@ body {
 		-webkit-transform: translateY(0%);	
 	}
 	50% {
-		-webkit-transform: translateY(7%);	
+		-webkit-transform: translateY(15%);	
 	}	
 	100% {
 		-webkit-transform: translateY(0%);
