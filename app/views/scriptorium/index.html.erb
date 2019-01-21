@@ -26,8 +26,9 @@
     <ul class="content__list">
       <% @articles.each do |article| %>
         <li class="content__article">
-          <h3 class="content__article__title"><%= link_to article.title, article_path(article), :class => 
-          "content__article__title" %></h3>
+          <h3 class="content__article__title">
+            <%= link_to article.title, article_path(article), :class => "content__article__title" %>
+          </h3>
         </li>
       <% end %>
   </div>
