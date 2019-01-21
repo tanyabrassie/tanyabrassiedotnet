@@ -1,9 +1,9 @@
-<p>
-  <strong>Title:</strong>
+<div class="article-body">
   <%= @article.title %>
-</p>
+<div>
  
 <p>
   <strong>Text:</strong>
-  <%= @article.text %>
+  <%= sanitize @article.text, scrubber: ArticleScrubberHelper::ArticleScrubber.new %>
 </p>
+
