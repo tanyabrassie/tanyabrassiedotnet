@@ -2,6 +2,9 @@ $green: #DFE7DB;
 $cream: #FFF7F1;
 $greyBrown: #5E5B57;
 $coral: #FFB0A3;
+$lightGreen: #e9f1f0c4;
+$teal: #85dec8;
+$yellowTeal: #86dcbb;
 
 body {
   color: $greyBrown;
@@ -10,7 +13,7 @@ body {
 }
 
 .header {
-  background-color: $green;
+  background-color: $lightGreen;
   position: relative;
   font-family: europa, sans-serif;
 }
@@ -70,7 +73,7 @@ body {
     width: 100%;
     transform: rotate(-10deg);
     padding: 20px;
-    border: 3px solid $coral;
+    border: 3px solid $yellowTeal;
     max-width: 220px;
 
     @media screen and (min-width: 768px) {
@@ -87,7 +90,7 @@ body {
   top: 20px;
   left: 10%;
   display: none;
-  color: $coral;
+  color: $teal;
 
   @media screen and (min-width: 648px) {
     top: 20px;
@@ -98,7 +101,7 @@ body {
 
 .russian {
   position: absolute;
-  color: $coral;
+  color: $teal;
   font-size: 20px;
   top: 73%;
   left: 30%;
@@ -161,7 +164,7 @@ body {
 
 .ands {
   font-size: 22px;
-  color: $coral;
+  color: $teal;
   position: absolute;
   bottom: 80px;
   right: 35px;
@@ -195,7 +198,7 @@ body {
 
 
 .content {
-  background-color: $cream;
+  background-color: #fff;
   font-family: europa, sans-serif;
 }
 
@@ -206,7 +209,7 @@ body {
 }
 
 .content__title {
-  color: $coral;
+  color: $teal;
   background-color: $greyBrown;
   padding: 8px;
   display: inline-block;
