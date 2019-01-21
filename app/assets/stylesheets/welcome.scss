@@ -1,8 +1,73 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.secret-link {
-  font-size: 20px;
-  color: red;
-  margin: auto;
+.entrance {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-content: center;
+  background-color: #e9f1f0c4;
+
+  &__link {
+    margin: auto;
+    font-size: 28px;
+    margin: auto;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: -2px;
+    color: #a771b7;
+  }
+}
+
+.intro-link {
+  display: block;  
+}
+
+$green: #86dcbb;
+$purple: #2d4bebc4;
+$yellow: #ddec32;
+$red: #ff5d5d;
+
+@mixin colorMorph($delay) {
+  animation-name: colorMorph;
+  animation-delay: $delay;
+  animation-duration: 5s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  
+  @keyframes colorMorph {
+    0% {
+      color: $purple;
+    }
+
+    25% {
+      color: $green;
+    }
+
+    75% {
+      color: $yellow;
+    }
+  
+    100% {
+      color: $red;
+    }
+  }
+}
+
+
+.color-morph__a {
+  @include colorMorph(0);
+}
+
+.color-morph__b {
+  @include colorMorph(1s);
+}
+
+.color-morph__c {
+  @include colorMorph(2s);
+}
+
+.color-morph__d {
+  @include colorMorph(3s);
 }

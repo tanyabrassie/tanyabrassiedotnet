@@ -15,7 +15,6 @@ body {
 .header {
   background-color: $lightGreen;
   position: relative;
-  font-family: europa, sans-serif;
 }
 
 .header-content {
@@ -47,11 +46,15 @@ body {
   }
 }
 
+.space {
+  padding-right: 10px;
+}
+
 .header-content__title {
   font-size: 38px;
   font-weight: 700;
-  letter-spacing: 3px;
-  font-family: europa, sans-serif;
+  letter-spacing: -3px;
+  color: #a771b7;
 }
 
 .header-content__subtitle {
@@ -59,8 +62,6 @@ body {
   font-family: prestige-elite-std, monospace;
   font-weight: 400;
   font-style: normal;
-  padding-top: 10px;
-
 }
 
 .header__title {
@@ -199,7 +200,6 @@ body {
 
 .content {
   background-color: #fff;
-  font-family: europa, sans-serif;
 }
 
 .content__container {
