@@ -1,0 +1,20 @@
+@import 'colors';
+
+.navbar {
+  background-color: $lightGreen;
+  padding: 10px 20px;
+
+  &__links {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  &__logo {
+    font-size: 20px;
+    letter-spacing: -2px;
+    font-weight: 700;
+    text-decoration: none;
+    color: $purple;
+  }
+}

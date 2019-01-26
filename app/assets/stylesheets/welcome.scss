@@ -25,49 +25,90 @@
 }
 
 $green: #86dcbb;
-$purple: #2d4bebc4;
+$purple: #899bff;
+$neonPurple: #f9bbff;
 $yellow: #ddec32;
-$red: #ff5d5d;
+$orange: #ffe5bb;
 
-@mixin colorMorph($delay) {
-  animation-name: colorMorph;
-  animation-delay: $delay;
+@mixin colorMorphA {
+  animation-name: colorMorphA;
+  animation-delay: 0s;
   animation-duration: 5s;
   animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
   
-  @keyframes colorMorph {
+  @keyframes colorMorphA {
     0% {
-      color: $purple;
-    }
-
-    25% {
       color: $green;
     }
 
-    75% {
-      color: $yellow;
+    50% {
+      color: $purple;
     }
-  
+
     100% {
-      color: $red;
+      color: $neonPurple;
+    }
+  }
+}
+
+@mixin colorMorphB {
+  animation-name: colorMorphB;
+  animation-delay: 0s;
+  animation-duration: 5s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  
+  @keyframes colorMorphB {
+    0% {
+      color: $neonPurple;
+    }
+
+    50% {
+      color: $green;
+    }
+
+    100% {
+      color: $purple;
+    }
+  }
+}
+
+@mixin colorMorphC {
+  animation-name: colorMorphC;
+  animation-delay: 0s;
+  animation-duration: 5s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  
+  @keyframes colorMorphC {
+    0% {
+      color: $green;
+    }
+
+    50% {
+      color: $orange;
+    }
+
+    100% {
+      color: $neonPurple;
     }
   }
 }
 
 
+
+
+
+
 .color-morph__a {
-  @include colorMorph(0);
+  @include colorMorphA;
 }
 
 .color-morph__b {
-  @include colorMorph(1s);
+  @include colorMorphB;
 }
 
 .color-morph__c {
-  @include colorMorph(2s);
-}
-
-.color-morph__d {
-  @include colorMorph(3s);
+  @include colorMorphC;
 }

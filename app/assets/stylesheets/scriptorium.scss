@@ -1,10 +1,4 @@
-$green: #DFE7DB;
-$cream: #FFF7F1;
-$greyBrown: #5E5B57;
-$coral: #FFB0A3;
-$lightGreen: #e9f1f0c4;
-$teal: #85dec8;
-$yellowTeal: #86dcbb;
+@import 'colors';
 
 body {
   color: $greyBrown;
@@ -73,13 +67,13 @@ body {
   &__monk {
     width: 100%;
     transform: rotate(-10deg);
-    padding: 20px;
-    border: 3px solid $yellowTeal;
-    max-width: 220px;
+    max-width: 230px;
 
     @media screen and (min-width: 768px) {
       margin-left: -60px;
-      max-width: 360px;
+      max-width: 400px;
+      background: white;
+      box-shadow: 1px 1px 1px 1px #ddd;
     }
   }
 }
@@ -203,7 +197,7 @@ body {
 }
 
 .content__container {
-  max-width: 768px;
+  max-width: 830px;
   margin: auto;
   padding: 70px 20px;
 }
