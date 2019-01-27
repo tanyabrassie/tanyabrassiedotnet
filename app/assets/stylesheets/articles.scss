@@ -2,9 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.article-body {
+@import 'colors';
+
+.article-wrapper {
   padding: 20px;
+  max-width: 830px;
+  margin: auto;
 }
+
 .article__title {
-  font-size: 38px;
+  font-size: 34px;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 2px;
+  padding: 10px 0px;
+}
+
+.article__timestamp {
+  font-family: prestige-elite-std, monospace;
+  padding: 20px 0 10px;
+  display: block;
+  color: $lightGreyBrown;
+}
+
+.paragraph {
+  padding: 10px 0;
+  font-size: 18px;
 }

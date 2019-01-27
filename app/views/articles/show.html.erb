@@ -1,12 +1,10 @@
 
 <%= render 'layouts/navbar' %>
 
-<div class="article-body">
-  <%= @article.title %>
-<div>
- 
-<p>
-  <strong>Text:</strong>
+<div class="article-wrapper">
+  <strong class="article__timestamp"> <%= @article.created_at.strftime("%B %-d, %Y") %></strong>
+  <h1 class="article__title"><%= @article.title %></h1>
   <%= sanitize @article.text, scrubber: ArticleScrubberHelper::ArticleScrubber.new %>
-</p>
+ </div>
+
 
