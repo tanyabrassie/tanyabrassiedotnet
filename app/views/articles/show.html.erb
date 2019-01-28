@@ -3,6 +3,7 @@
 
 <div class="article-wrapper">
   <strong class="article__timestamp"> <%= @article.created_at.strftime("%B %-d, %Y") %></strong>
+  <img class="article__image" src=<%="https://s3.amazonaws.com/tanyabucket/" + @article.title.parameterize + ".png" %> />
   <h1 class="article__title"><%= @article.title %></h1>
   <%= sanitize @article.text, scrubber: ArticleScrubberHelper::ArticleScrubber.new %>
  </div>

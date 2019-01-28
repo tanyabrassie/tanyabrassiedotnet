@@ -2,7 +2,7 @@
   class ArticleScrubber < Rails::Html::PermitScrubber
     def initialize
       super
-      self.tags = %w( h1 h2 h3 p div span a)
+      self.tags = %w( h1 h2 h3 p table td th tr tbody em span div span ul li ol a)
       self.attributes = %w( class )
     end
 
