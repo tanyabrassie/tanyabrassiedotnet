@@ -38,7 +38,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 10px;
+  padding: 20px 10px;
 
 }
 
@@ -58,13 +58,13 @@ body {
 }
 
 .header-content__subtitle {
-  font-size: 13px;
+  font-size: 16px;
   font-family: prestige-elite-std, monospace;
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
 
   @media screen and (min-width: 540px) {
-    font-size: 16px;
+    font-weight: 400;
   }
 }
 
@@ -105,8 +105,8 @@ body {
 .russian {
   position: absolute;
   color: $teal;
-  font-size: 20px;
-  top: 73%;
+  font-size: 16px;
+  top: 86%;
   left: 60%;
 }
 
@@ -137,10 +137,10 @@ body {
 
 .dots {
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 30px;
   letter-spacing: 3px;
-  font-size: 20px;
+  font-size: 15px;
   transform: rotate(35deg);
   font-weight: 700;
   animation: spin;
@@ -183,7 +183,7 @@ body {
 
 .closing {
   font-size: 13px;
-  top: 120px;
+  top: 140px;
   left: 20%;
   font-weight: 700;
   position: absolute;
@@ -223,7 +223,7 @@ body {
 }
 
 .content__article {
-  padding: 25px 0;
+  padding: 20px 0;
   border-bottom: 2px solid $greyBrown;
   line-height: 1.5;
 
@@ -233,11 +233,12 @@ body {
     font-size: 18px;
     letter-spacing: 1px;
     text-decoration: none;
-    color: $greyBrown;
+    color: $electricPurple;
+    opacity: 1;
 
     &:hover {
-      color: $electricPurple;
-      transition: color .5s;
+      opacity: .7;
+      transition: opacity .5s;
     }
   }
 }
