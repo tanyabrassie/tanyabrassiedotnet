@@ -1,50 +1,48 @@
-<div class="header">
-  <div class="not-equal">
-    <span class="exclamation">!</span>
-    <span class="equals">=</span>
-    <span class="equals-two">=</span>
-  </div>
-  <div class="russian">Б</div>
-  <div class="closing">&#60;/&#62;</div>
-  <div class="brackets">{}</div>
-  <div class="header-content">
-    <div class="header-content__text">
-      <h1 class="header-content__title">
-        <span class="color-morph__a">T</span>
-        <span class="color-morph__b">h</span>
-        <span class="color-morph__c space">e</span>
-        <span class="color-morph__a">S</span>
-        <span class="color-morph__b">c</span>
-        <span class="color-morph__c">r</span>
-        <span class="color-morph__a">i</span>
-        <span class="color-morph__b">p</span>
-        <span class="color-morph__c">t</span>
-        <span class="color-morph__a">o</span>
-        <span class="color-morph__b">r</span>
-        <span class="color-morph__c">i</span>
-        <span class="color-morph__a">u</span>
-        <span class="color-morph__b">m</span>
-      </h1>
-      <em class="header-content__subtitle">A learning center</em>
+<div class="outer-container">
+  <div class="header">
+    <div class="not-equal">
+      <span class="exclamation">!</span>
+      <span class="equals">=</span>
+      <span class="equals-two">=</span>
     </div>
-    <div class="header-content__image">
-      <%= image_tag "monk2.gif", class: "header-content__image__monk" %>
+    <div class="russian">Б</div>
+    <div class="closing">&#60;/&#62;</div>
+    <div class="brackets">{}</div>
+    <div class="header-content">
+      <div class="header-content__text">
+        <h1 class="header-content__title">
+          <span class="color-morph__a">T</span>
+          <span class="color-morph__b">h</span>
+          <span class="color-morph__c space">e</span>
+          <span class="color-morph__a">S</span>
+          <span class="color-morph__b">c</span>
+          <span class="color-morph__c">r</span>
+          <span class="color-morph__a">i</span>
+          <span class="color-morph__b">p</span>
+          <span class="color-morph__c">t</span>
+          <span class="color-morph__a">o</span>
+          <span class="color-morph__b">r</span>
+          <span class="color-morph__c">i</span>
+          <span class="color-morph__a">u</span>
+          <span class="color-morph__b">m</span>
+        </h1>
+        <em class="header-content__subtitle">- a learning center 🧠🤪</em>
+      </div>
     </div>
+    <div class="dots">...</div>
+    <div class="ands floating">&&</div>
   </div>
-  <div class="dots">...</div>
-  <div class="ands floating">&&</div>
-</div>
 
-<div class="content">
-  <div class="content__container">
-    <h2 class="content__title">Entries</h2>
-    <ul class="content__list">
-      <% @articles.each do |article| %>
-        <li class="content__article">
-          <h3 class="content__article__title">
-            <%= link_to article.title, article_path(article), :class => "content__article__title" %>
-          </h3>
-        </li>
-      <% end %>
+  <div class="content">
+    <div class="content__container">
+      <ul class="content__list">
+        <% @articles.each do |article| %>
+          <li class="content__article">
+            <h3 class="content__article__title">
+              <%= link_to article.title, article_path(article), :class => "content__article__title" %>
+            </h3>
+          </li>
+        <% end %>
+    </div>
   </div>
 </div>

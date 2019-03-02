@@ -45,7 +45,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1.6;
-  font-family: europa, sans-serif;
+	font-family: europa, sans-serif;
 }
 ol, ul {
 	list-style: none;
