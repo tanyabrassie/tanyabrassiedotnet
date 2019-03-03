@@ -27,7 +27,6 @@ body {
   flex-direction: column;
 
   @media screen and (min-width: 648px) {
-    flex-direction: row;
     padding: 40px 20px;
   }
 }
@@ -39,7 +38,6 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding: 20px 10px;
-
 }
 
 .space {
@@ -62,30 +60,17 @@ body {
   font-family: prestige-elite-std, monospace;
   font-weight: 800;
   font-style: normal;
-
-  @media screen and (min-width: 540px) {
-    font-weight: 400;
-  }
 }
 
 .header__title {
   display: block;
 }
 
-.header-content__image {
-  &__monk {
-    width: 100%;
-    transform: rotate(-10deg);
-    max-width: 230px;
-    opacity: .9;
-
-    @media screen and (min-width: 768px) {
-      margin-left: -60px;
-      max-width: 400px;
-      background: white;
-      box-shadow: 1px 1px 1px 1px #ddd;
-    }
-  }
+.header__divider {
+  width: 100%;
+  max-width: 830px;
+  padding-top: 30px;
+  box-sizing: border-box;
 }
 
 // header doodads
@@ -95,10 +80,11 @@ body {
   @media screen and (min-width: 648px) {
     top: 160px;
     position: absolute;
-    font-size: 18px;
+    font-size: 15px;
     left: 10%;
     transform: rotate(-5deg);
     display: block;
+    color: #e7fff8;
   }
 }
 
@@ -106,8 +92,13 @@ body {
   position: absolute;
   color: $teal;
   font-size: 16px;
-  top: 86%;
-  left: 60%;
+  top: 48%;
+  left: 55%;
+  display: none;
+
+  @media screen and (min-width: 648px) {
+    display: block;
+  }
 }
 
 .exclamation {
@@ -169,7 +160,8 @@ body {
   font-size: 15px;
   color: $teal;
   position: absolute;
-  bottom: 80px;
+  bottom: 140px;
+  color: #e7fff8;
   right: 35px;
   animation: colorMorph;
   animation-duration: 4s;
@@ -178,12 +170,13 @@ body {
 
   @media screen and (min-width: 640px) {
     right: 18%;
+    bottom: 80px;
   }
 }
 
 .closing {
   font-size: 13px;
-  top: 140px;
+  top: 130px;
   left: 20%;
   font-weight: 700;
   position: absolute;
@@ -206,7 +199,7 @@ body {
 .content__container {
   max-width: 830px;
   margin: auto;
-  padding: 70px 20px;
+  padding: 40px 20px;
 }
 
 .content__title {
@@ -224,7 +217,7 @@ body {
 
 .content__article {
   padding: 20px 0;
-  border-bottom: 2px solid $greyBrown;
+  border-bottom: 2px solid #e7fff8;
   line-height: 1.5;
 
   &__title {
